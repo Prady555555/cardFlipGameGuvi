@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mainContainer {
+  margin: 48px auto;
+  width: max-content;
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  gap: 16px;
+  box-sizing: border-box;
+}
+.boxContainer {
+  @apply h-[100px] bg-[#111111] border-4 border-solid border-[#444444] cursor-pointer;
+}
+.Box {
+}
