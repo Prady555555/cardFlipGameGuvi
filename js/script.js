@@ -1,8 +1,16 @@
-window.onload = function name(params) {};
-
 const mainContainer = document.body.appendChild(document.createElement("div"));
-mainContainer.className = "mainContainer";
-
+mainContainer.className = "mainContainer mainContanerTalwindCss";
+const buttonCOntainer = document.body.appendChild(
+  document.createElement("div")
+);
+buttonCOntainer.className = "btnCont";
+const resetBtn = buttonCOntainer.appendChild(document.createElement("button"));
+resetBtn.innerText = "RESET";
+resetBtn.className = "btn";
+resetBtn.onclick = function () {
+  window.location.reload();
+};
+// resetBtn.onclick(window.location.reset());
 const tilesContainer = document.querySelector(".tiles");
 const colors = [
   "aqua",
@@ -56,7 +64,7 @@ function buildTile(color) {
       revealedCount += 2;
 
       if (revealedCount === tileCount) {
-        alert("You win! Refresh to start again.");
+        alert("game is over Reset to Play Again ");
       }
 
       return;

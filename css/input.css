@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.mainContanerTalwindCss {
+  @apply;
+}
 .mainContainer {
   margin: 48px auto;
   width: max-content;
@@ -14,4 +17,11 @@
   @apply h-[100px] bg-[#111111] border-4 border-solid border-[#444444] cursor-pointer;
 }
 .Box {
+}
+
+.btnCont {
+  @apply flex justify-center items-center mx-autos;
+}
+.btn {
+  @apply bg-black rounded-md text-white  hover:bg-red-600 p-6;
 }
